@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box; /*box-sizing: border-box indicates that the dimensions of our elements must stay like this, even though we add other properties like padding, width, etc*/
+}
+
+body{
+    min-height: 100vh;
+    background-color: #fa1616;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+}
+
+.Logo{
+    align-self: center; /*align-self alínea un elemento solo*/
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 900px; /*max-width indicates the maximun width, it is even more considered than the width property*/
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    padding-left: 0;
+}
+
+.col-6{ /*la clase se llama así para indicar que debe ocupar la mitad, la otra clase, col-md-3 indica que debe ocupar la mitad de la mitad*/
+    /* border: green solid 2px; */
+    padding-right: 8px; /*which equals 0.5rem*/
+    padding-left: 8px;
+    flex-basis: 50%; /*flex-basis indicates the percentage that the element must occupate*/
+} /*para cualquier medida de pantalla, se aplica un flex-basis del 50%*/
+
+@media screen and (min-width: 600px){ /*estos estilos se aplican para un mínimo de 600px de ancho, recuerda que min-width: y max-width: tienen mas jerarquía de importancia que width*/
+    .col-md-3{
+        padding-left: 8px;
+        padding-right: 8px;
+        flex-basis: 25%; /*para medidas de pantalla con un mínimo de ancho de 600px se aplica un flex-basis del 25%, para medida que sean menores a 600px, se aplicará el flex-basis 50% de col-6*/
+    }
+}
+
+.Loader__container{
+    bottom: 0;
+    position: absolute;
+}
+
+button{
+    background-color: yellow;
+}
+

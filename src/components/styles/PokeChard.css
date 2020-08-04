@@ -1,0 +1,39 @@
+.PokemonChard{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f8e1f4;
+    border-radius: 8px;
+    height: 240px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative; /*the element is positioned in relation to the normal flux of the doccument*/
+    width: 100%;
+}
+
+.Button__name{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    bottom: 0; /*bottom: 0 posicionó el elemento hasta abajo*/
+    color: black;
+    display: flex;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding: 1rem 0.5rem;
+    position: absolute; /*position:absolute, posicionates the element relative to its closest ancester*/
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.Button__name:focus{
+    outline: none;
+}
+
+.Button__name:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

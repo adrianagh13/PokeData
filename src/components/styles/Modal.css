@@ -1,0 +1,43 @@
+.Modal{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed; /*the element is removed from the nomal flux of the doc, it is positioned in relation to the inicial block container, this is what puts the modal above the chards*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Modal__container{
+    align-items: center;
+    background-color: white;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+    padding: 1rem;
+    position: relative;
+    width: 400px;
+} 
+
+.Modal__container h1{
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.Modal__button{
+    padding: 0.2rem 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Modal__button:hover{
+    cursor: pointer;
+}
+
+.Details__container{
+    font-family: 'Yantramanav', sans-serif;
+    text-transform: capitalize;
+}
