@@ -56,7 +56,19 @@ ul{
     position: absolute;
 }
 
-button{
+.LoadMore{
     background-color: yellow;
+    border-radius: 20px;
+    border-style: none;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
 }
 
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}

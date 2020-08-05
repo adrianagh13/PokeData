@@ -30,6 +30,7 @@
 }
 
 .Modal__button{
+    background-color: yellow;
     border-radius: 5px;
     border-style: none;
     padding: 0.2rem 0.8rem;
