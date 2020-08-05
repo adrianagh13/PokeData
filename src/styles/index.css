@@ -43,7 +43,7 @@ ul{
     flex-basis: 50%; /*flex-basis indicates the percentage that the element must occupate*/
 } /*para cualquier medida de pantalla, se aplica un flex-basis del 50%*/
 
-@media screen and (min-width: 600px){ /*estos estilos se aplican para un mínimo de 600px de ancho, recuerda que min-width: y max-width: tienen mas jerarquía de importancia que width*/
+@media screen and (min-width: 600px){ /*estos estilos se aplican para pantallas con un mínimo de 600px de ancho, recuerda que min-width: y max-width: tienen mas jerarquía de importancia que width*/
     .col-md-3{
         padding-left: 8px;
         padding-right: 8px;

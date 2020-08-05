@@ -43,6 +43,12 @@ class PokeChardContainer extends React.Component{
             // console.log(this.state.images[4])            
             console.log(this.state.data[1])
             // console.log(this.state.data[1].name) //nombre
+            // if(this.state.images[5] == null){
+            //     console.log("No female");
+            // }
+            // if(this.state.images[5] != null){
+            //     console.log("There's a female version");
+            // }
 
         } catch (error) {
             this.setState({ loading: false, error: true})
@@ -59,6 +65,7 @@ class PokeChardContainer extends React.Component{
                 <PokeChard 
                     details={this.state.data[1]} 
                     image={this.state.images[4]}
+                    female={this.state.images[5]}
                     onCloseModal={this.handleCloseModal}
                     onOpenModal={this.handleOpenModal}
                     modalIsOpen={this.state.modalIsOpen}

@@ -4,17 +4,18 @@
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    position: fixed; /*the element is removed from the nomal flux of the doc, it is positioned in relation to the inicial block container, this is what puts the modal above the chards*/
+    position: fixed; /*the element is removed from the nomal flux of the doc, it is positioned in relation to the initial block container, this is what puts the modal above the chards*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .Modal__container{
-    align-items: center;
-    background-color: white;
+    background-color: rgb(109, 111, 114);
+    border-radius: 8px;
     display: inherit;
-    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Titillium Web', sans-serif;
     justify-content: center;
     margin-top: 10rem;
     padding: 1rem;
@@ -23,12 +24,18 @@
 } 
 
 .Modal__container h1{
-    font-family: 'Didact Gothic', sans-serif;
+    text-transform: capitalize;
+    align-self: center;
+    color: white;
 }
 
 .Modal__button{
+    border-radius: 5px;
+    border-style: none;
     padding: 0.2rem 0.8rem;
     position: absolute;
+    margin-top: 3px;
+    margin-right: 3px;
     right: 0;
     top: 0;
 }
@@ -38,6 +45,31 @@
 }
 
 .Details__container{
-    font-family: 'Yantramanav', sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+    flex-direction: row;
     text-transform: capitalize;
+    font-size: 20px;
+    /* border: 2px solid blue; */
+    width: inherit;
+    padding: 8px 8px;
 }
+
+.left, .right{
+    width: 40%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.Detail{
+    margin-bottom: 6px;
+}
+
+

@@ -18,6 +18,7 @@ function PokeChard(props){
                 details={props.details}
                 isOpen={props.modalIsOpen}
                 onClose={props.onCloseModal}
+                female={props.female}
             />
         </div>
 
